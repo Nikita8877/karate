@@ -5,8 +5,40 @@
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+  
   </head>
   <body>
-    <%= yield %>
+
+    <div class="convert">
+
+    <div id="header">
+    <div class="logo">
+    	<h1>Kekusinkay Karate<h1>
+    </div>
+    </div>
+   
+    <div class="nav">
+       <ul class="navigation"> 
+       <li><a href="index.html">Ояма</a></li>
+       <li><%= link_to "Federation",    '#' %></li>
+       <li><a href="gal.html">Galery</a></li>
+       <li><a href="dostij.html">Camp</a></li>
+       <li><a href="dostij.html">Map</a></li>
+       </ul>
+	</div>
+
+	
+	
+	<%= yield %>
+	
+
+	<div id="footer">
+		<p>123 Your Street, Anytown, State 12345-6789 | Tel: (555) 555-5555</p>
+	</div>
+
+	</div>
+
+
+
   </body>
 </html>
