@@ -1,9 +1,9 @@
 Karate::Application.routes.draw do
-  get "static_pages/home"
+  get "static_pages/federation"
 
   get "static_pages/ozma"
 
-  get "static_pages/galery"
+  get "static_pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

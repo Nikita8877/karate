@@ -9,7 +9,7 @@ group :assets do
   gem 'compass-rails'
 end
 
-
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
