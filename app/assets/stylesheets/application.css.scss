@@ -94,6 +94,9 @@
 	color: #ffffff;
 	@include border-radius(25px);
 }
+p {
+  margin-left: 20px;
+}
 
 #footer p {
 	position: relative;

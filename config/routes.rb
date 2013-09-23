@@ -5,6 +5,8 @@ Karate::Application.routes.draw do
 
   get "static_pages/contact"
 
+  get "static_pages/camp"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
