@@ -4,16 +4,6 @@
 }
 h2 {
 	margin-top: 10px;
-	
-}
-p {
-	font-size: 18px;
-}
-
-
-#content {
-width:980px;
-margin-top: 10px;
 }
 
 .slider {
@@ -40,7 +30,7 @@ display:block;
 text-indent:-9999px;
 outline:none;
 z-index:50;
-background: url(/assets/prev_next.png);
+background-image:url(/assets/prev_next.png);
 width:42px;
 height:42px;
 position:absolute;
@@ -102,8 +92,7 @@ outline:none;
 
 a {
 color:#fff;
-}
-
-a img {
+ img {
 border:none;
+}
 }

@@ -1,11 +1,15 @@
 Karate::Application.routes.draw do
-  get "static_pages/federation"
+  
+  match '/federation', to: 'static_pages#federation'
 
-  get "static_pages/ozma"
+  match '/ozma', to: 'static_pages#ozma'
+  
+  match '/contact', to: 'static_pages#contact'
 
-  get "static_pages/contact"
+  match '/camp', to: 'static_pages#camp'
 
-  get "static_pages/camp"
+  match '/galery', to: 'static_pages#galery'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

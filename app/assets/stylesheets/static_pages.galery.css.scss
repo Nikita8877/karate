@@ -1,0 +1,16 @@
+#gallery {
+	text-align: left;
+	width: 590px;
+	margin: 0px auto;
+	margin-bottom: 180px;
+}
+
+#gallery a {
+	margin-right: 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#gallery a:nth-child(4), #gallery a:nth-child(8), #gallery a:nth-child(12) {
+	margin: 0px;
+}

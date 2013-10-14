@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+  layout :check_layout
 
   def help
   end
@@ -9,5 +8,11 @@ class StaticPagesController < ApplicationController
   end
 
   def camp
+  end
+
+  private
+
+  def check_layout
+    !request.xhr? == true ? 'application' : false
   end
 end

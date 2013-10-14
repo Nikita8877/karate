@@ -5,9 +5,32 @@
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    
-  </head>
-  <body>
+
+<script type="text/javascript">
+hs.graphicsDir = '/assets/highslide/graphics/';
+hs.transitions = ['expand', 'crossfade'];
+hs.dimmingOpacity = 0.1;
+hs.align = 'center';
+hs.align = 'center';
+hs.outlineType = 'drop-shadow',
+hs.showCredits = false,
+hs.fadeInOut = true;
+hs.addSlideshow({
+  // slideshowGroup: 'group1',
+  interval: 3000,
+  repeat: false,
+  useControls: true,
+  fixedControls: true,
+  overlayOptions: {
+    opacity: 1,
+    position: 'bottom center',
+    hideOnMouseOut: true
+  }
+});
+</script>
+
+</head>
+<body>
 
     <div class="convert">
 
@@ -19,18 +42,32 @@
    
     <div class="nav">
        <ul class="navigation"> 
-       <li><a href="index.html">Ояма</a></li>
-       <li><a href="gal.html">Тренер </a></li>
-       <li><a href="gal.html">Galery</a></li>
-       <li><a href="dostij.html">Camp</a></li>
-       <li><a href="dostij.html">Контакты</a></li>
+       <li><%= link_to "Ozma",     ozma_path %></li>
+       <li><%= link_to "Тренер",   federation_path %></li>
+       <li><%= link_to "Галерея",  galery_path %></li>
+       <li><%= link_to "Лагерь",   camp_path %></li>
+       <li><%= link_to "Контакты", contact_path %></li>
        </ul>
 	</div>
 
-	
-	
+  <div class="element">
+  <div class="loading2">
+      <div></div>
+      <div></div>
+            <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+  </div>
+  
+  <div class="forajax">
 	<%= yield %>
-	
+	</div>
+
+  
 
 	<div id="footer">
 		<p>123 Your Street, Anytown, State 12345-6789 | Tel: (555) 555-5555</p>
@@ -38,7 +75,5 @@
 
 	</div>
 
-
-
-  </body>
+</body>
 </html>

@@ -15,5 +15,14 @@
 //= require_tree .
 //= require mobilyslider
 //= require init
+//= ajax
+
+
+
+
+
+
+
+
 
 
