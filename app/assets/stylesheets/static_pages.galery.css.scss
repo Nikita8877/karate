@@ -1,8 +1,8 @@
 #gallery {
-	text-align: left;
-	width: 590px;
+	text-align: center;
 	margin: 0px auto;
 	margin-bottom: 180px;
+	margin-top: 35px;
 }
 
 #gallery a {
@@ -11,6 +11,6 @@
 	margin-bottom: 10px;
 }
 
-#gallery a:nth-child(4), #gallery a:nth-child(8), #gallery a:nth-child(12) {
+#gallery a:nth-child(6), #gallery a:nth-child(12), #gallery a:nth-child(18) {
 	margin: 0px;
 }
